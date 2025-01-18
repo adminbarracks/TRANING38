@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
+import img1 from "../src/assets/logo/logo.png"
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -30,7 +31,7 @@ const App = () => {
   return (
     <div className="app">
       <div className="header">
-        <img src="/mnt/data/Round%20logo%20new.png" alt="38 Barracks Logo" className="logo" />
+        <img src={img1||"null"} className="logo" />
         <h1>38 Barracks Training App</h1>
       </div>
 
